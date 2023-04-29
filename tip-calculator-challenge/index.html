@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1 id="intro">
+      SPLI <br />
+      TTER
+    </h1>
+    <main>
+      <section id="left">
+        <div class="bill-input">
+          <label style="display: flex" for="bill" style="margin-bottom: 5px"
+            >Bill
+            <span
+              data-cantbezero1
+              style="margin-left: auto; display: none; color: red"
+              >Can't be zero</span
+            ></label
+          >
+          <div class="dollar-sign-input">
+            <img src="images/icon-dollar.svg" alt="dollar sign" />
+            <input type="number" data-billInput placeholder="0" value="10" />
+          </div>
+        </div>
+
+        <label class="space-push">Select Tip %</label>
+        <ul class="select-tip">
+          <li>
+            <input type="radio" value="5" name="amount" checked="checked" />
+            <label for="5percent" name="amount">5%</label>
+          </li>
+          <li>
+            <input type="radio" value="10" name="amount" />
+            <label for="10percent" name="amount">10%</label>
+          </li>
+          <li>
+            <input type="radio" value="15" name="amount" />
+            <label for="15percent" name="amount">15%</label>
+          </li>
+          <li>
+            <input type="radio" value="25" name="amount" />
+            <label for="25percent" name="amount">25%</label>
+          </li>
+          <li>
+            <input type="radio" value="50" name="amount" />
+            <label for="50percent" name="amount">50%</label>
+          </li>
+
+          <li>
+            <input type="radion" name="amount" />
+            <input
+              type="number"
+              id="otherAmount"
+              name="numAmount"
+              placeholder="Custom"
+              data-customtip
+            />
+          </li>
+        </ul>
+
+        <div class="number-of-people">
+          <label for="peopleNumber" class="space-push error"
+            >Number of People <span data-cantbezero>Can't be zero</span></label
+          >
+          <div class="dollar-sign-input">
+            <img src="images/icon-person.svg" alt="person icon" />
+            <input type="number" data-peopleNumber placeholder="0" value="1" />
+          </div>
+        </div>
+      </section>
+      <section id="right">
+        <section>
+          <h1>Tip Amount</h1>
+          <h2 data-tipAmount>$0.00</h2>
+          <p>/person</p>
+        </section>
+        <section>
+          <h1>Total</h1>
+          <h2 data-totalAmount>$0.00</h2>
+          <p>/person</p>
+        </section>
+        <button data-reset>RESET</button>
+      </section>
+    </main>
+  </body>
+</html>
