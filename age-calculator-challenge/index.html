@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main class="calculator">
+      <header>
+        <section class="days">
+          <label data-label1>day</label>
+          <input type="number" data-days placeholder="DD" autofocus />
+          <p data-daysError>Must be a valid day</p>
+          <!-- <input type="text" pattern="\d*" maxlength="4"> -->
+        </section>
+        <section class="months">
+          <label data-label2>month</label>
+          <input type="number" data-months placeholder="MM" />
+          <p data-monthsError>Must be a valid month</p>
+        </section>
+        <section class="years">
+          <label data-label3>year</label>
+          <input type="number" data-years placeholder="YYYY" />
+          <p data-yearsError>Must be in the past</p>
+        </section>
+      </header>
+
+      <section class="line">
+        <hr />
+        <button data-calculate>
+          <img src="assets/images/icon-arrow.svg" alt="arrow down" />
+        </button>
+      </section>
+
+      <section class="main_content">
+        <p><span data-birthYear>--</span>years</p>
+        <p><span data-birthMonth>--</span>months</p>
+        <p><span data-birthdate>--</span>days</p>
+      </section>
+    </main>
+  </body>
+</html>
