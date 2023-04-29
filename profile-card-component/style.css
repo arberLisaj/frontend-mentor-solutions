@@ -12,4 +12,88 @@
 }
 body {
   font-family: sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+main {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+main .top {
+  background-image: url(./images/bg-pattern-card.svg);
+}
+main .profile-picture {
+  background-image: url(./images/image-victor.jpg);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  margin: auto;
+  border: 4px solid white;
+}
+  main {
+    width: 80%;
+    max-width: 320px;
+  }
+  main .top {
+    /* padding-block: 20px; */
+    height: 100px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  main .profile-picture {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+  }
+
+  main h1 {
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main span {
+    color: var(--dark-grayish-blue);
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 16px;
+    padding-top: 2px;
+  }
+
+  main p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+    color: var(--dark-grayish-blue);
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background-color: gainsboro;
+    margin-block: 20px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-inline: 40px;
+    padding-bottom: 20px;
+  }
+  ul h2{
+    font-size: 18px;
+  }
+  ul li{
+    text-align: center;
+  }
+
