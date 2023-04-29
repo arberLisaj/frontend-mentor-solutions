@@ -45,7 +45,7 @@ main .profile-picture {
     /* padding-block: 20px; */
     height: 110px;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
   }
   main .profile-picture {
     height: 80px;
@@ -71,10 +71,10 @@ main .profile-picture {
     padding-top: 2px;
   }
 
-  main p {
+  main p:nth-of-type(1) {
     text-align: center;
     font-size: 14px;
-    margin-top: 8px;
+    margin-top: 10px;
     color: var(--dark-grayish-blue);
   }
   hr {
@@ -95,6 +95,10 @@ main .profile-picture {
   }
   ul li{
     text-align: center;
-    margin-block: 5px;
+    padding-block: 0px 12px;
+    
+  }
+  ul li p{
+    line-height: 1px;
   }
 
