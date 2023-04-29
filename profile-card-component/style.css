@@ -43,7 +43,7 @@ main .profile-picture {
   }
   main .top {
     /* padding-block: 20px; */
-    height: 100px;
+    height: 110px;
     position: relative;
     margin-bottom: 50px;
   }
@@ -58,7 +58,7 @@ main .profile-picture {
 
   main h1 {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +81,7 @@ main .profile-picture {
     border: none;
     height: 1px;
     background-color: gainsboro;
-    margin-block: 20px;
+    margin-block: 25px;
   }
   ul {
     display: flex;
@@ -95,5 +95,6 @@ main .profile-picture {
   }
   ul li{
     text-align: center;
+    margin-block: 5px;
   }
 
