@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+$linear-active-input-border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+$error-red-clr: hsl(0, 100%, 66%);
+$neutral-white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 3%, 87%);
+$dark-grayish-violet: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+body {
+  background-color: $light-grayish-violet;
+  font-family: "Space Grotesk", sans-serif;
+  label {
+    // font-size: 14px;
+    // margin-block: 10px 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+  }
+  input {
+    // border-radius: 3px;
+    border: 1px solid $light-grayish-violet;
+    padding-left: 1vmin;
+    border-radius: 5px;
+  }
+  input:focus {
+    outline: none;
+  }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+main {
+  background-color: $neutral-white;
+}
+.container {
+  display: flex;
+  margin: 7.5vh auto;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+
+  aside {
+    background-image: url(../images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32%;
+  }
+  main {
+    background-color: $neutral-white;
+    padding: 20px;
+    position: relative;
+    display: grid;
+    place-content: center;
+
+    .card-inputs {
+      label {
+        font-size: 1.5vmin;
+        margin: 1.5vmin 0vmin 0.5vmin;
+      }
+      input {
+        width: 100%;
+      }
+      .expiry-input {
+        display: flex;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+      }
+
+      button {
+        background-color: $very-dark-violet;
+        border: none;
+        color: $neutral-white;
+        text-transform: capitalize;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .absolute-cards-container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      .front-card {
+        background-image: url(../images/bg-card-front.png);
+        color: $neutral-white;
+        .circles {
+          display: flex;
+          align-items: center;
+          .big-circle {
+            background-color: $neutral-white;
+            border-radius: 50%;
+          }
+          .small-circle {
+            border: 0.2vmin solid $neutral-white;
+            border-radius: 50%;
+          }
+        }
+        .number {
+          letter-spacing: 0.3vmin;
+        }
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          // padding-inline: 1vmin;
+        }
+      }
+      .back-card {
+        background-image: url(../images/bg-card-back.png);
+        display: grid;
+        align-items: center;
+        justify-content: flex-end;
+
+        .cvc-number {
+          color: $neutral-white;
+        }
+      }
+      .card {
+        // background-color: black;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border-radius: 1.5vmin;
+
+        // padding: 15px;
+      }
+    }
+  }
+}
+
+.thankyou {
+  width: 40vmin;
+  margin-left: 10vmin;
+  display: block;
+  text-align: center;
+  h2 {
+    margin-block: 10px 5px;
+  }
+  p{
+    margin-bottom: 5px;
+  }
+}
+
+// medium screen
+@media (max-width: 1250px) {
+  .container {
+    max-width: 75vw;
+    height: 85vh;
+
+    main {
+      width: 68%;
+      padding: 20px;
+      padding-left: 10vmin;
+
+      .card-inputs {
+        // background-color: red;
+        width: 40vmin;
+        margin-left: 10vmin;
+        label {
+          font-size: 1.3vmin;
+          margin: 1.3vmin 0vmin 0.4vmin;
+        }
+        input {
+          width: 100%;
+          height: 5vmin;
+          font-size: 1.8vmin;
+          margin-bottom: 0.9vmin;
+        }
+        .expiry-input {
+          input {
+            width: 7vmin;
+          }
+          input:nth-of-type(1) {
+            margin-right: 0.5vmin;
+          }
+        }
+
+        .cvc {
+          input {
+            width: 20px;
+          }
+        }
+
+        button {
+          height: 6vmin;
+          margin-top: 3vmin;
+          font-size: 2vmin;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+
+      .absolute-cards-container {
+        left: -34%;
+        top: 50%;
+        transform: translateY(-50%);
+        .front-card {
+          padding: 3vmin;
+          .circles {
+            .big-circle {
+              width: 4.2vmin;
+              height: 4.3vmin;
+              border-radius: 50%;
+              margin-right: 1.5vmin;
+            }
+            .small-circle {
+              height: 2vmin;
+              width: 2vmin;
+              border-radius: 50%;
+            }
+          }
+          .number {
+            letter-spacing: 0.3vmin;
+            font-size: 2.8vmin;
+            margin-top: 6.5vmin;
+          }
+          .flex {
+            display: flex;
+            // padding-inline: 1vmin;
+            margin-top: 1.5vmin;
+            .name,
+            .expiry span,
+            .expiry {
+              font-size: 1.6vmin;
+            }
+          }
+        }
+        .back-card {
+          margin-left: 4vw;
+          margin-top: 3vh;
+          padding: 5vmin;
+          .cvc-number {
+            // padding-right: 4vmin;
+            font-size: 2vmin;
+            letter-spacing: 0.3vmin;
+            padding-bottom: 0.2vmin;
+          }
+        }
+        .card {
+          width: 43vmin;
+          height: 25vmin;
+          // background-color: black;
+          // padding: 15px;
+        }
+      }
+    }
+  }
+}
+// small screen
+@media (max-width: 1050px) {
+  * {
+    display: none;
+  }
+}
+// large screen
+@media (min-width: 1250px) {
+  .container {
+    max-width: 75vw;
+    height: 85vh;
+
+    main {
+      width: 68%;
+      padding: 20px;
+      padding-left: 10vmin;
+
+      .card-inputs {
+        // background-color: red;
+        width: 45vmin;
+        label {
+          font-size: 1.5vmin;
+          margin: 1.5vmin 0vmin 0.5vmin;
+        }
+        input {
+          width: 100%;
+          height: 5vmin;
+          font-size: 2vmin;
+          margin-bottom: 1vmin;
+        }
+        .expiry-input {
+          input {
+            width: 8vmin;
+          }
+          input:nth-of-type(1) {
+            margin-right: 0.5vmin;
+          }
+        }
+
+        .cvc {
+          input {
+            width: 20px;
+          }
+        }
+
+        button {
+          height: 6vmin;
+          margin-top: 3vmin;
+          font-size: 2vmin;
+          width: 100%;
+          border-radius: 5px;
+        }
+      }
+
+      .absolute-cards-container {
+        left: -30%;
+        top: 50%;
+        transform: translateY(-50%);
+        .front-card {
+          padding: 3vmin;
+          .circles {
+            .big-circle {
+              width: 4.5vmin;
+              height: 4.5vmin;
+              border-radius: 50%;
+              margin-right: 1.5vmin;
+            }
+            .small-circle {
+              height: 2vmin;
+              width: 2vmin;
+              border-radius: 50%;
+            }
+          }
+          .number {
+            letter-spacing: 0.3vmin;
+            font-size: 3vmin;
+            margin-top: 6.5vmin;
+          }
+          .flex {
+            display: flex;
+            // padding-inline: 1vmin;
+            margin-top: 1.5vmin;
+            .name,
+            .expiry span,
+            .expiry {
+              font-size: 1.8vmin;
+            }
+          }
+        }
+        .back-card {
+          margin-left: 4vw;
+          margin-top: 3vh;
+          padding: 5vmin;
+          .cvc-number {
+            // padding-right: 4vmin;
+            font-size: 2vmin;
+            letter-spacing: 0.3vmin;
+            padding-bottom: 0.2vmin;
+          }
+        }
+        .card {
+          width: 45vmin;
+          height: 25vmin;
+          // background-color: black;
+          // padding: 15px;
+        }
+      }
+    }
+  }
+}
