@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
 
     <link
       rel="icon"
@@ -11,11 +16,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
     <main>
-      <div class="photo-container">photo backgroudn</div>
+      <div class="photo-container"></div>
       <div class="content-container">
         <span>PERFUME</span>
         <h1>Gabrielle Essecne Eau De Parfum</h1>
@@ -26,8 +32,11 @@
         <div class="price-container">
           <h2>149.99</h2>
           <!-- strike through the second price  -->
-          <h5>169.99</h5>
+          <p>169.99</p>
         </div>
+        <button>
+          <img src="./images/icon-cart.svg" alt="card image" />Add to Card
+        </button>
       </div>
     </main>
   </body>

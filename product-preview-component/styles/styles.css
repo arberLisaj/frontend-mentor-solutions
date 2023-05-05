@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+main {
+  margin: auto;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  border-radius: 13px;
+}
+main .photo-container {
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+main .content-container span {
+  display: block;
+}
+main .content-container h1 {
+  font-family: "Fraunces", serif;
+}
+main .content-container .price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .content-container .price-container h2 {
+  margin-right: 10px;
+}
+main .content-container .price-container h2 {
+  font-weight: bolder;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+}
+main .content-container .price-container p {
+  text-decoration: line-through;
+}
+main .content-container button {
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  width: 100%;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .content-container button:hover {
+  background-color: hsl(228, 12%, 48%);
+}
+
+@media (max-width: 540px) {
+  body main {
+    width: 80%;
+    max-width: 330px;
+  }
+  body main .photo-container {
+    height: 200px;
+    width: 100%;
+    background-image: url(../images/image-product-mobile.jpg);
+  }
+  body main .content-container {
+    padding-inline: 20px;
+  }
+  body main .content-container span {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-block: 16px 5px;
+  }
+  body main .content-container h1 {
+    font-size: 28px;
+  }
+  body main .content-container p {
+    font-size: 14px;
+    margin-block: 13px 8px;
+  }
+  body main .content-container .price-container {
+    margin-bottom: 8px;
+  }
+  body main .content-container .price-container h2 {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  body main .content-container .price-container p {
+    font-size: 10px;
+  }
+  body main .content-container button {
+    width: 100%;
+    border-radius: 6px;
+    padding-block: 10px;
+    margin-bottom: 20px;
+  }
+  body main .content-container button img {
+    margin-right: 8px;
+  }
+}
+@media (min-width: 540px) {
+  body main {
+    width: 80%;
+    max-width: 650px;
+    display: flex;
+  }
+  body main .photo-container {
+    width: 140%;
+    background-image: url(../images/image-product-desktop.jpg);
+  }
+  body main .content-container {
+    padding: 30px;
+  }
+  body main .content-container span {
+    padding-bottom: 15px;
+  }
+  body main .content-container h1 {
+    font-size: 35px;
+    line-height: 39px;
+    max-width: 230px;
+  }
+  body main .content-container p {
+    padding-block: 15px;
+  }
+  body main .content-container button {
+    padding-block: 15px;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  body main .content-container button img {
+    margin-right: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */
