@@ -46,6 +46,7 @@ main .content-container .price-container h2 {
 }
 main .content-container .price-container p {
   text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
 }
 main .content-container button {
   border: none;
@@ -127,7 +128,7 @@ main .content-container button:hover {
     font-size: 13px;
   }
   body main .content-container h1 {
-    font-size: 35px;
+    font-size: 33px;
     line-height: 39px;
     max-width: 230px;
   }

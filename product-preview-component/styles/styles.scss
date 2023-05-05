@@ -42,7 +42,7 @@ main {
       align-items: center;
       justify-content: space-between;
       width: fit-content;
-      h2{
+      h2 {
         margin-right: 10px;
       }
 
@@ -53,6 +53,7 @@ main {
       }
       p {
         text-decoration: line-through;
+        color: $dark-grayish-blue;
       }
     }
     button {
@@ -67,7 +68,7 @@ main {
       font-weight: bold;
       cursor: pointer;
     }
-    button:hover{
+    button:hover {
       background-color: $very-blue;
     }
   }
@@ -145,7 +146,7 @@ main {
           font-size: 13px;
         }
         h1 {
-          font-size: 35px;
+          font-size: 33px;
           line-height: 39px;
           // word-break: break-all;
           max-width: 230px;
@@ -154,11 +155,10 @@ main {
           padding-block: 15px;
         }
 
-         
         button {
           padding-block: 14px;
           font-size: 16px;
-          margin-top:15px;
+          margin-top: 15px;
           img {
             margin-right: 10px;
           }
