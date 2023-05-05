@@ -68,7 +68,7 @@ main {
       cursor: pointer;
     }
     button:hover{
-      background-color: $dark-grayish-blue;
+      background-color: $very-blue;
     }
   }
 }
@@ -128,7 +128,7 @@ main {
   body {
     main {
       width: 80%;
-      max-width: 650px;
+      max-width: 630px;
       display: flex;
 
       .photo-container {
@@ -138,9 +138,11 @@ main {
         // background-image: url(../images/image-product-mobile.jpg);
       }
       .content-container {
-        padding: 30px;
+        padding: 25px;
         span {
           padding-bottom: 15px;
+          letter-spacing: 3px;
+          font-size: 13px;
         }
         h1 {
           font-size: 35px;
@@ -154,7 +156,7 @@ main {
 
          
         button {
-          padding-block: 15px;
+          padding-block: 14px;
           font-size: 16px;
           margin-top:15px;
           img {

@@ -60,7 +60,7 @@ main .content-container button {
   cursor: pointer;
 }
 main .content-container button:hover {
-  background-color: hsl(228, 12%, 48%);
+  background-color: hsl(212, 21%, 14%);
 }
 
 @media (max-width: 540px) {
@@ -111,7 +111,7 @@ main .content-container button:hover {
 @media (min-width: 540px) {
   body main {
     width: 80%;
-    max-width: 650px;
+    max-width: 630px;
     display: flex;
   }
   body main .photo-container {
@@ -119,10 +119,12 @@ main .content-container button:hover {
     background-image: url(../images/image-product-desktop.jpg);
   }
   body main .content-container {
-    padding: 30px;
+    padding: 25px;
   }
   body main .content-container span {
     padding-bottom: 15px;
+    letter-spacing: 3px;
+    font-size: 13px;
   }
   body main .content-container h1 {
     font-size: 35px;
@@ -133,7 +135,7 @@ main .content-container button:hover {
     padding-block: 15px;
   }
   body main .content-container button {
-    padding-block: 15px;
+    padding-block: 14px;
     font-size: 16px;
     margin-top: 15px;
   }
