@@ -1,0 +1,19 @@
+@use "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: variables.$ff;
+}
+body {
+  padding: 20px;
+  background-color: variables.$cream;
+}
+main {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+@import "../components/header";
+@import "../components/card";

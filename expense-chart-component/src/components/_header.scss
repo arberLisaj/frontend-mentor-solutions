@@ -1,0 +1,10 @@
+@use "../Styles/variables";
+header {
+  background-color: variables.$soft-red;
+  color: variables.$very-pale-orange;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 40px 20px;
+}

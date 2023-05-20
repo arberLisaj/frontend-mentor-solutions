@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  padding: 20px;
+  background-color: hsl(27, 66%, 92%);
+}
+
+main {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  background-color: hsl(10, 79%, 65%);
+  color: hsl(33, 100%, 98%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 40px 20px;
+}
+
+section {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 20px 40px;
+  background-color: hsl(33, 100%, 98%);
+}
+section h1 {
+  font-size: 40px;
+  padding-block: 20px 60px;
+}
+section article {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+section article div {
+  transition: 0.2s;
+  width: 90%;
+  display: block;
+  text-align: center;
+}
+section article div .candle {
+  width: 90%;
+  border-radius: 10px;
+  background-color: hsl(10, 79%, 65%);
+  position: relative;
+}
+section article div .candle:hover .hover {
+  display: block;
+}
+section article div .candle .hover {
+  width: calc(100% + 5px);
+  left: 50%;
+  top: -40px;
+  transform: translateX(-50%);
+  position: absolute;
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: hsl(25, 47%, 15%);
+  color: hsl(33, 100%, 98%);
+  display: none;
+}
+section article div .candle:hover {
+  background-color: hsl(186, 34%, 60%);
+  cursor: pointer;
+}
+section article div p {
+  text-transform: lowercase;
+  color: hsl(28, 10%, 53%);
+}
+section hr {
+  margin-block: 40px;
+  border: 1px solid hsl(27, 66%, 92%);
+  background-color: transparent;
+}
+section footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section footer h1 {
+  line-height: 24px;
+}
+section footer span {
+  color: hsl(28, 10%, 53%);
+}
+section footer .monthly span {
+  position: relative;
+  bottom: -5px;
+}
+section footer .lastMonth {
+  padding-bottom: 25px;
+}
+section footer .lastMonth p {
+  font-size: 18px;
+}/*# sourceMappingURL=styles.css.map */
