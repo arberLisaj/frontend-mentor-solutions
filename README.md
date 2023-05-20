@@ -9,8 +9,7 @@
 | 03 | [Tip Calculator Challenge on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/tip-calculator-challenge)| [View Site](https://tip-calculator101.netlify.app/)    |
 | 04 | [Profile Card Component on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/profile-card-component)| [View Site](https://profile-card101.netlify.app/)    |
 | 05 | [Product Review Component on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/product-preview-component)| [View Site](https://product-preview-component101.netlify.app/)    |
-
-
+| 06 | [Expense Chart Component on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/expense-chart-component)| [View Site](https://expense-chart-component101.netlify.app/)    |
 
 
 
