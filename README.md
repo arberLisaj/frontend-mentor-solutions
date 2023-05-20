@@ -1,6 +1,6 @@
-## All My Frontend Mentor Solutions 
+- ```Frontend Mentor Profile``` https://www.frontendmentor.io/profile/arberLisaj
 
-<p>Links to the Specific Github Repo and the Live site hosted with Netlify</p>
+- <p>Links to the Specific Github Repo and the Live site hosted with Netlify</p>
 
 |  #  | Solutions                                                                                                                                 | Challenges                                                                                                                   |
 | :-: | ----------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -11,3 +11,5 @@
 | 05 | [Product Review Component on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/product-preview-component)| [View Site](https://product-preview-component101.netlify.app/)    |
 | 06 | [Expense Chart Component on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/expense-chart-component)| [View Site](https://expense-chart-component101.netlify.app/)    |
 | 07 | [Age Calculator on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/age-calculator-challenge)| [View Site](https://frontend-mentor-age-calculator101.netlify.app/)    |
+
+
