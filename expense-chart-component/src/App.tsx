@@ -4,7 +4,7 @@ import "./Styles/styles.css";
 
 const App = () => {
   return (
-    <div>
+    <div id="card">
       <main>
         <Header balance={921.48} />
         <Card
