@@ -10,6 +10,7 @@ interface Props {
   asideState: boolean;
 }
 const Hero = ({ asideState }: Props) => {
+  console.log(asideState);
   return (
     <section id="hero">
       <picture>
