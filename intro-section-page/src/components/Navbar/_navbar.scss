@@ -1,4 +1,120 @@
 @use "../../styles/variables";
 nav {
-  background-color: variables.$white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+// mobile navigation
+@media (max-width: 640px) {
+  .desktop-navigation {
+    display: none;
+  }
+  nav {
+    padding: 15px;
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+
+    .mobile-menu-toggle {
+      width: fit-content;
+      height: fit-content;
+      cursor: pointer;
+      padding-top: 7px;
+      img {
+        width: 25px;
+      }
+    }
+  }
+}
+// desktop navigation
+@media (min-width: 640px) {
+  .mobile-menu-toggle {
+    display: none;
+  }
+  nav {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 15px;
+
+    .logo-and-ul {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        margin-right: 2em;
+        cursor: pointer;
+      }
+      ul.desktop-navigation {
+        padding-top: 5px;
+        display: flex;
+        li {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          cursor: pointer;
+          position: relative;
+
+          img {
+            padding-top: 3px;
+            margin-left: 5px;
+          }
+        }
+      }
+      .dropdown {
+        background-color: white;
+        position: absolute;
+        top: 35px;
+        padding: 11px;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        li {
+          margin: 10px 0;
+
+          img {
+            margin-top: -5px;
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .dropdown:nth-of-type(1) {
+        right: 0;
+      }
+      .dropdown:nth-of-type(2) {
+        // padding-right: 40px;
+        width: 200px;
+        left: 0;
+      }
+    }
+    .buttons-container {
+      button {
+        padding: 8px 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      button:nth-of-type(1) {
+        margin-top: 5px;
+        margin-right: 5px;
+      }
+      button:nth-of-type(2) {
+        border-radius: 10px;
+        border: 2px solid rgb(165, 165, 165);
+      }
+    }
+  }
 }
