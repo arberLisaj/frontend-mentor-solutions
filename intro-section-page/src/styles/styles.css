@@ -1,72 +1,16 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: gainsboro;
+nav {
+  background-color: hsl(0, 0%, 98%);
 }
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.slide-in {
-  transform: translateX(0);
-}
-
-.slide-out {
-  transform: translateX(120%);
-}
-
-.tint {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.345);
-  z-index: 99;
-}
-
-ul {
-  list-style: none;
-}
-
-@media (max-width: 550px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10px;
-  }
-  nav h1 {
-    font-weight: bold;
-    font-size: 2rem;
-  }
-  nav aside {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: white;
-    padding: 20px;
-    width: 55%;
-    height: 100vh;
-    transition: 0.3s;
-    z-index: 9999;
-  }
-  nav aside .toggleAside {
-    width: 20px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: 10px;
-  }
-  nav aside .toggleAside p {
-    -webkit-margin-after: 10px;
-            margin-block-end: 10px;
-  }
+section#hero {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
 }/*# sourceMappingURL=styles.css.map */

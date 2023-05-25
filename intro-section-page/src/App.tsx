@@ -1,12 +1,12 @@
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
 import "./styles/styles.css";
 
 const App = () => {
   return (
     <main>
       <Navbar />
-      <Home />
+      <Hero />
     </main>
   );
 };
