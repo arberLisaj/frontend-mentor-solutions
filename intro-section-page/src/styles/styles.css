@@ -130,7 +130,7 @@ section#hero img {
 @media (min-width: 940px) {
   section#hero {
     margin-top: 8em;
-    max-width: 1300px;
+    max-width: 1150px;
     margin: auto;
     display: flex;
     flex-direction: row-reverse;
@@ -141,9 +141,6 @@ section#hero img {
     width: 35%;
     min-width: 450px;
     margin-left: 3em;
-  }
-  section#hero .content {
-    max-width: 40%;
   }
   section#hero h1 {
     font-size: 4.5rem;
