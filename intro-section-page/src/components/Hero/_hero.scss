@@ -1,6 +1,67 @@
 @use "../../styles/variables";
 section#hero {
-  // here will be all the hero styles
-  // background-color: variables.$black;
-  color: variables.$white;
+  padding-inline: 10px;
+  img {
+    max-width: 100%;
+  }
+}
+
+// mobile design
+// desktop design
+@media (min-width: 940px) {
+  section#hero {
+    margin-top: 8em;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    // background-color: red;
+    position: relative;
+
+    picture {
+      width: 35%;
+      min-width: 450px;
+      margin-left: 3em;
+    }
+    .content {
+      max-width: 40%;
+    }
+    h1 {
+      font-size: 4.5rem;
+      line-height: 3.8rem;
+      margin-top: 1.5em;
+      span {
+        display: block;
+      }
+    }
+    p {
+      text-align: left;
+      font-size: 17px;
+      margin-block: 2.5em 2em;
+      max-width: 400px;
+      font-weight: 600;
+      color: variables.$dark-gray;
+    }
+    button {
+      background-color: variables.$black;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 10px 20px;
+      color: variables.$white;
+      border-radius: 10px;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      bottom: 40px;
+      li {
+        margin-inline: 15px;
+      }
+    }
+  }
 }

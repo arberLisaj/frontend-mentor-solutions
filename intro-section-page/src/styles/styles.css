@@ -45,7 +45,7 @@ nav ul {
     height: -moz-fit-content;
     height: fit-content;
     cursor: pointer;
-    padding-top: 7px;
+    padding-top: 10px;
   }
   nav .mobile-menu-toggle img {
     width: 25px;
@@ -121,5 +121,63 @@ nav ul {
   }
 }
 section#hero {
-  color: hsl(0, 0%, 95%);
+  padding-inline: 10px;
+}
+section#hero img {
+  max-width: 100%;
+}
+
+@media (min-width: 940px) {
+  section#hero {
+    margin-top: 8em;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: relative;
+  }
+  section#hero picture {
+    width: 35%;
+    min-width: 450px;
+    margin-left: 3em;
+  }
+  section#hero .content {
+    max-width: 40%;
+  }
+  section#hero h1 {
+    font-size: 4.5rem;
+    line-height: 3.8rem;
+    margin-top: 1.5em;
+  }
+  section#hero h1 span {
+    display: block;
+  }
+  section#hero p {
+    text-align: left;
+    font-size: 17px;
+    margin-block: 2.5em 2em;
+    max-width: 400px;
+    font-weight: 600;
+    color: hsl(0, 0%, 41%);
+  }
+  section#hero button {
+    background-color: hsl(0, 0%, 8%);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+  }
+  section#hero ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 40px;
+  }
+  section#hero ul li {
+    margin-inline: 15px;
+  }
 }/*# sourceMappingURL=styles.css.map */

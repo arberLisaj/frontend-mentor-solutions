@@ -8,7 +8,10 @@ import Reminder from "../../images/icon-reminders.svg";
 import Planning from "../../images/icon-planning.svg";
 // import GiandX from "../images/icon-close-menu.svg";
 
-const Navbar = () => {
+interface Props {
+  handleClick: () => void;
+}
+const Navbar = ({ handleClick }: Props) => {
   const [activeFeatures, setActiveFeatures] = useState(false);
   const [activeCompany, setActiveCompany] = useState(false);
   return (
@@ -53,7 +56,7 @@ const Navbar = () => {
         <button>Login</button>
         <button>Register</button>
       </div>
-      <div className="mobile-menu-toggle">
+      <div className="mobile-menu-toggle" onClick={handleClick}>
         <img src={MenuToggleIcon} alt="menu toggler" />
       </div>
     </nav>
