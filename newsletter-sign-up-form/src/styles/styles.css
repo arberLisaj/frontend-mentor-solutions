@@ -8,4 +8,138 @@
 
 body {
   background-color: hsl(235, 18%, 26%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body img {
+  max-width: 100%;
+}
+
+section#form ul {
+  list-style: none;
+}
+section#form input,
+section#form button {
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+section#form input:focus {
+  outline: none;
+}
+section#form label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+section#form label span {
+  padding: 5px;
+}
+
+@media (max-width: 750px) {
+  section#form {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 15px;
+  }
+  section#form picture {
+    width: 100%;
+  }
+  section#form picture img {
+    width: 100%;
+  }
+  section#form .left-desktop-container {
+    padding: 15px;
+  }
+  section#form .left-desktop-container h1 {
+    font-size: 2rem;
+    padding-block: 10px 15px;
+  }
+  section#form .left-desktop-container p {
+    padding-bottom: 15px;
+  }
+  section#form .left-desktop-container ul li {
+    display: flex;
+  }
+  section#form .left-desktop-container ul li img {
+    margin-top: -17px;
+    margin-right: 5px;
+  }
+  section#form .left-desktop-container form input {
+    padding-block: 10px;
+    margin-bottom: 15px;
+    border: 1px solid hsl(234, 29%, 20%);
+  }
+  section#form .left-desktop-container form button {
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding-block: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+@media (min-width: 750px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section#form {
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+  }
+  section#form .left-desktop-container {
+    padding-inline: 20px;
+  }
+  section#form .left-desktop-container picture {
+    display: grid;
+    align-items: stretch;
+    width: 45%;
+  }
+  section#form .left-desktop-container picture img {
+    width: 100%;
+    height: 100%;
+  }
+  section#form .left-desktop-container h1 {
+    font-size: 3rem;
+    padding-block: 40px 20px;
+    font-weight: bolder;
+  }
+  section#form .left-desktop-container ul {
+    margin-block: 30px;
+  }
+  section#form .left-desktop-container ul li {
+    display: flex;
+    margin-block: 10px;
+  }
+  section#form .left-desktop-container ul li img {
+    margin-right: 8px;
+  }
+  section#form .left-desktop-container label {
+    font-size: 15px;
+  }
+  section#form .left-desktop-container input {
+    border: 1px solid hsl(234, 29%, 20%);
+    height: 45px;
+    padding: 5px;
+  }
+  section#form .left-desktop-container button {
+    height: 45px;
+    padding: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+  }
 }/*# sourceMappingURL=styles.css.map */

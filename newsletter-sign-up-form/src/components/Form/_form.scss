@@ -1,0 +1,153 @@
+@use "../../styles/variables";
+
+section#form {
+  ul {
+    list-style: none;
+  }
+  input,
+  button {
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+
+    span {
+      padding: 5px;
+    }
+  }
+}
+// mobile designe
+@media (max-width: 750px) {
+  section#form {
+    background-color: variables.$white-clr;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 15px;
+
+    picture {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .left-desktop-container {
+      padding: 15px;
+
+      h1 {
+        font-size: 2rem;
+        padding-block: 10px 15px;
+      }
+
+      p {
+        padding-bottom: 15px;
+      }
+      ul {
+        li {
+          display: flex;
+
+          img {
+            margin-top: -17px;
+            margin-right: 5px;
+          }
+        }
+      }
+      form {
+        input {
+          //   height: 30px;
+          padding-block: 10px;
+          margin-bottom: 15px;
+          border: 1px solid variables.$dark-gray-clr;
+        }
+        button {
+          background-color: variables.$dark-gray-clr;
+          color: variables.$white-clr;
+          padding-block: 15px;
+          font-size: 17px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//desktop Designe
+
+@media (min-width: 750px) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section#form {
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: auto;
+    background-color: variables.$white-clr;
+
+    .left-desktop-container {
+      padding-inline: 20px;
+      picture {
+        display: grid;
+        //   place-content: center;
+        align-items: stretch;
+        width: 45%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      h1 {
+        font-size: 3rem;
+        padding-block: 40px 20px;
+        font-weight: bolder;
+      }
+
+      ul {
+        margin-block: 30px;
+        li {
+          display: flex;
+          margin-block: 10px;
+
+          img {
+            margin-right: 8px;
+          }
+        }
+      }
+
+      label {
+        font-size: 15px;
+      }
+      input {
+        border: 1px solid variables.$dark-gray-clr;
+        height: 45px;
+        padding: 5px;
+      }
+      button {
+        height: 45px;
+        padding: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+        background-color: variables.$dark-gray-clr;
+        color: variables.$white-clr;
+        cursor: pointer;
+      }
+    }
+  }
+}
