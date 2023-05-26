@@ -19,7 +19,11 @@ const Hero = ({ asideState, handleClose }: Props) => {
         <div className="close-aside" onClick={handleClose}>
           <img src={GiandX} alt="close" />
         </div>
-        pau pau
+
+        <p style={{ marginTop: "50px" }}>
+          This feature is not completed because i have a lot more important
+          stuff to learn than finish a washed aside {":) "}
+        </p>
       </aside>
       <picture>
         <source media="(max-width:940px)" srcSet={MobileHeroBackground} />
