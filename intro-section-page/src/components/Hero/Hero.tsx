@@ -5,14 +5,22 @@ import DataBlitz from "../../images/client-databiz.svg";
 import AudioPhine from "../../images/client-audiophile.svg";
 import Meet from "../../images/client-meet.svg";
 import Maker from "../../images/client-maker.svg";
+// close image for the aside
+import GiandX from "../../images/icon-close-menu.svg";
 
 interface Props {
   asideState: boolean;
+  handleClose: () => void;
 }
-const Hero = ({ asideState }: Props) => {
-  console.log(asideState);
+const Hero = ({ asideState, handleClose }: Props) => {
   return (
     <section id="hero">
+      <aside className={asideState ? "slide-in" : "slide-out "}>
+        <div className="close-aside" onClick={handleClose}>
+          <img src={GiandX} alt="close" />
+        </div>
+        pau pau
+      </aside>
       <picture>
         <source media="(max-width:940px)" srcSet={MobileHeroBackground} />
         <source media="(min-width:940px)" srcSet={DesktopHeroBackground} />

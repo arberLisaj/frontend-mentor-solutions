@@ -4,11 +4,14 @@ import Navbar from "./components/Navbar/Navbar";
 import "./styles/styles.css";
 
 const App = () => {
-  const [activeAside, setActiveAside] = useState(true);
+  const [activeAside, setActiveAside] = useState(false);
   return (
     <main>
-      <Navbar handleClick={() => setActiveAside(!activeAside)} />
-      <Hero asideState={activeAside} />
+      <Navbar handleClick={() => setActiveAside(true)} />
+      <Hero
+        asideState={activeAside}
+        handleClose={() => setActiveAside(false)}
+      />
     </main>
   );
 };

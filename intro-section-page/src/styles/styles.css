@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 97%);
 }
 
 nav {
@@ -126,10 +126,80 @@ section#hero {
 section#hero img {
   max-width: 100%;
 }
+section#hero button {
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 97%);
+  font-weight: bolder;
+}
+section#hero p {
+  color: hsl(0, 0%, 41%);
+}
+section#hero ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.slide-out {
+  transform: translateX(120%);
+}
+
+.slide-in {
+  transform: translateX(0);
+}
+
+@media (max-width: 940px) {
+  section#hero picture {
+    margin: auto;
+  }
+  section#hero h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin-block: 1em 0.6em;
+  }
+  section#hero p {
+    text-align: center;
+    padding-inline: 13px;
+    font-weight: 600;
+  }
+  section#hero button {
+    display: block;
+    margin: 25px auto 35px;
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: none;
+  }
+  section#hero ul {
+    max-width: 400px;
+    margin: auto;
+  }
+  section#hero ul img {
+    width: 60px;
+  }
+  section#hero aside {
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 60%;
+    height: 100vh;
+    padding: 10px;
+  }
+  section#hero aside .close-aside {
+    padding: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+  }
+}
 @media (min-width: 940px) {
+  aside {
+    display: none;
+  }
   section#hero {
-    margin-top: 8em;
+    padding-top: 4em;
     max-width: 1150px;
     margin: auto;
     display: flex;
@@ -143,7 +213,7 @@ section#hero img {
     margin-left: 3em;
   }
   section#hero h1 {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     line-height: 3.8rem;
     margin-top: 1.5em;
   }
@@ -153,28 +223,29 @@ section#hero img {
   section#hero p {
     text-align: left;
     font-size: 17px;
-    margin-block: 2.5em 2em;
+    line-height: 24px;
+    margin-block: 2.8em 2.2em;
     max-width: 400px;
     font-weight: 600;
-    color: hsl(0, 0%, 41%);
   }
   section#hero button {
-    background-color: hsl(0, 0%, 8%);
     border: none;
     font-size: 18px;
-    font-weight: bold;
     padding: 10px 20px;
-    color: hsl(0, 0%, 95%);
     border-radius: 10px;
+    cursor: pointer;
+  }
+  section#hero button:hover {
+    background-color: hsl(0, 0%, 97%);
+    color: hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
   }
   section#hero ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
     position: absolute;
-    bottom: 40px;
+    bottom: 10px;
   }
   section#hero ul li {
     margin-inline: 15px;
+    cursor: pointer;
   }
 }/*# sourceMappingURL=styles.css.map */
