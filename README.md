@@ -11,4 +11,5 @@
 | 06 | [Expense Chart Component on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/expense-chart-component)| [View Site](https://expense-chart-component101.netlify.app/)    |
 | 07 | [Age Calculator on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/age-calculator-challenge)| [View Site](https://frontend-mentor-age-calculator101.netlify.app/)    |
 | 08 | [Faq accordion on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/faq-accordion-card)| [View Site](https://faq101.netlify.app/)    |
-| 08 | [Intro Section Page on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/intro-section-page)| [View Site](https://intro101.netlify.app/)    |
+| 09 | [Intro Section Page on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/intro-section-page)| [View Site](https://intro101.netlify.app/)    |
+|10 | [Intro Section Page on GitHub](https://github.com/arberLisaj/frontend-mentor/tree/main/newsletter-sign-up-form)| [View Site](https://newsletter101.netlify.app/)    |
