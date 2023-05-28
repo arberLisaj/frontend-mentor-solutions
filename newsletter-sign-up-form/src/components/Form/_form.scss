@@ -100,30 +100,33 @@ section#form {
       background-color: variables.$white-clr;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-direction: row-reverse;
       border-radius: 30px;
-      padding: 20px;
+      padding: 15px;
       gap: 30px;
+      
 
       .left-desktop-container {
+
         // margin: auto;
         padding-inline: 30px 0px;
         max-width: 49%;
         // background-color: red;
         h1 {
-          font-size: 2.8rem;
-          padding-block: 70px 20px;
+          font-size: 2.2rem;
+          padding-block: 0 20px;
           // font-weight: bolder;
         }
 
         .intro {
           margin-bottom: 25px;
-
+          font-size: 14px;
           color: variables.$dark-gray-clr;
         }
 
         ul {
-          margin-bottom: 25px;
+          margin-bottom: 30px;
 
           li {
             display: flex;
@@ -139,6 +142,7 @@ section#form {
         label {
           .error {
             padding-right: 10px;
+            display: none;
           }
         }
         input {

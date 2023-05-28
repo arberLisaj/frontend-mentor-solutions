@@ -97,9 +97,10 @@ section#form label span {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row-reverse;
     border-radius: 30px;
-    padding: 20px;
+    padding: 15px;
     gap: 30px;
   }
   main#main-container section#form .left-desktop-container {
@@ -107,15 +108,16 @@ section#form label span {
     max-width: 49%;
   }
   main#main-container section#form .left-desktop-container h1 {
-    font-size: 2.8rem;
-    padding-block: 70px 20px;
+    font-size: 2.2rem;
+    padding-block: 0 20px;
   }
   main#main-container section#form .left-desktop-container .intro {
     margin-bottom: 25px;
+    font-size: 14px;
     color: hsl(234, 29%, 20%);
   }
   main#main-container section#form .left-desktop-container ul {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
   main#main-container section#form .left-desktop-container ul li {
     display: flex;
@@ -128,6 +130,7 @@ section#form label span {
   }
   main#main-container section#form .left-desktop-container label .error {
     padding-right: 10px;
+    display: none;
   }
   main#main-container section#form .left-desktop-container input {
     border: 1px solid hsl(234, 29%, 20%);
