@@ -11,8 +11,8 @@ const Form = () => {
         <img src={DesktopImage} alt="drawing animation" />
       </picture>
       <section className="left-desktop-container">
-        <h1>Stay Updated</h1>
-        <p>Join 60,000 product managers receiving monthly updates on:</p>
+        <h1>Stay Updated!</h1>
+        <p className="intro">Join 60,000 product managers receiving monthly updates on:</p>
         <ul>
           <li>
             <img src={listSuccess} alt="tick" />
@@ -30,7 +30,7 @@ const Form = () => {
         <form className="input-container">
           <label htmlFor="email">
             <span>Email address</span>
-            <span>Error</span>
+            <span className="error">Error</span>
           </label>
           <input id="email" type="email" />
           <button>Subscribe to monthly newsletter</button>

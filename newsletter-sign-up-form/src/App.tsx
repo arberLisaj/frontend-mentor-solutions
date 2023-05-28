@@ -2,9 +2,9 @@ import Form from "./components/Form/Form";
 import "./styles/styles.css";
 const App = () => {
   return (
-    <div>
+    <main id="main-container">
       <Form />
-    </div>
+    </main>
   );
 };
 

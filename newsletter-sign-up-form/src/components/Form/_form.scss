@@ -86,67 +86,88 @@ section#form {
 
 @media (min-width: 750px) {
   body {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
   }
-  section#form {
-    padding: 30px;
+
+  main#main-container {
     max-width: 800px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: auto;
-    background-color: variables.$white-clr;
+    overflow: hidden;
+    // background-color: red;
+    section#form {
+      background-color: variables.$white-clr;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      border-radius: 30px;
+      padding: 20px;
+      gap: 30px;
 
-    .left-desktop-container {
-      padding-inline: 20px;
-      picture {
-        display: grid;
-        //   place-content: center;
-        align-items: stretch;
-        width: 45%;
-
-        img {
-          width: 100%;
-          height: 100%;
+      .left-desktop-container {
+        // margin: auto;
+        padding-inline: 30px 0px;
+        max-width: 49%;
+        // background-color: red;
+        h1 {
+          font-size: 2.8rem;
+          padding-block: 70px 20px;
+          // font-weight: bolder;
         }
-      }
-      h1 {
-        font-size: 3rem;
-        padding-block: 40px 20px;
-        font-weight: bolder;
-      }
 
-      ul {
-        margin-block: 30px;
-        li {
-          display: flex;
-          margin-block: 10px;
+        .intro {
+          margin-bottom: 25px;
 
-          img {
-            margin-right: 8px;
+          color: variables.$dark-gray-clr;
+        }
+
+        ul {
+          margin-bottom: 25px;
+
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 15px;
+
+            img {
+              margin-right: 8px;
+            }
+          }
+        }
+        label {
+          .error {
+            padding-right: 10px;
+          }
+        }
+        input {
+          border: 1px solid variables.$dark-gray-clr;
+          font-size: 16px;
+          padding: 10px 10px;
+        }
+
+        button {
+          background-color: variables.$dark-gray-clr;
+          color: variables.$white-clr;
+          font-size: 16px;
+          padding-block: 14px;
+          font-weight: bold;
+          margin-top: 13px;
+          cursor: pointer;
+
+          &:hover {
+            background-image: linear-gradient(
+              to right,
+              variables.$tomato-clr,
+              orange
+            );
           }
         }
       }
-
-      label {
-        font-size: 15px;
-      }
-      input {
-        border: 1px solid variables.$dark-gray-clr;
-        height: 45px;
-        padding: 5px;
-      }
-      button {
-        height: 45px;
-        padding: 5px;
-        margin-top: 20px;
-        font-weight: bold;
-        background-color: variables.$dark-gray-clr;
-        color: variables.$white-clr;
-        cursor: pointer;
+      picture {
+        // background-color: red;
+        padding-left: 10px;
       }
     }
   }
