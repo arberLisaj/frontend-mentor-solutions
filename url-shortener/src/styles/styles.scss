@@ -1,11 +1,12 @@
-@use './variables';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:variables.$apple-font;
+@use "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: variables.$apple-font;
 }
 
-
-// import header styles 
-@import '../components/Header/header'
+// import header styles
+@import "../components/Header/header";
+// import hero styles
+@import "../components/Hero/hero";

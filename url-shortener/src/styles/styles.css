@@ -122,4 +122,78 @@ header button:nth-of-type(2):hover {
     cursor: pointer;
     color: hsl(260, 8%, 14%);
   }
+}
+section#hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+section#hero p {
+  color: hsl(257, 7%, 63%);
+}
+section#hero button {
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  section#hero .introduction h1,
+  section#hero .introduction p {
+    text-align: center;
+  }
+  section#hero .introduction h1 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-block: 40px 10px;
+  }
+  section#hero .introduction p {
+    font-size: 15px;
+    padding-inline: 15px;
+  }
+  section#hero .introduction button {
+    display: block;
+    padding: 8px 20px;
+    margin: 15px auto;
+  }
+  section#hero .animation {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  section#hero {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  section#hero .introduction {
+    min-width: 45%;
+  }
+  section#hero .introduction h1 {
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+    letter-spacing: -1.5px;
+    margin-bottom: 12px;
+    word-spacing: 5px;
+  }
+  section#hero .introduction p {
+    max-width: 380px;
+    margin-bottom: 20px;
+  }
+  section#hero .introduction button {
+    padding: 10px 35px;
+  }
+  section#hero .introduction button:hover {
+    opacity: 0.8;
+  }
+  section#hero .animation {
+    padding-top: 20px;
+  }
+  section#hero .animation img {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
