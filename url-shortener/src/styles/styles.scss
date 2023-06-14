@@ -6,7 +6,12 @@
   font-family: variables.$apple-font;
 }
 
+body {
+  background-color: rgb(236, 236, 236);
+}
 // import header styles
 @import "../components/Header/header";
 // import hero styles
 @import "../components/Hero/hero";
+// import link input
+@import "../components/LinkInput/linkInput";

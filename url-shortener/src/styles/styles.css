@@ -5,13 +5,17 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  background-color: rgb(236, 236, 236);
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  padding: 10px;
+  padding: 15px 10px;
 }
 header ul {
   list-style: none;
@@ -124,7 +128,7 @@ header button:nth-of-type(2):hover {
   }
 }
 section#hero {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: auto;
   padding: 10px;
 }
@@ -196,4 +200,78 @@ section#hero button {
   section#hero .animation img {
     max-width: 100%;
   }
+}
+section#link-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: auto;
+  margin-block: 20px;
+}
+section#link-container section#link {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: hsl(257, 27%, 26%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section#link-container section#link form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+section#link-container section#link form button {
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  height: 35px;
+  padding-inline: 25px;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+section#link-container section#link form input {
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  padding-inline: 5px;
+  border: none;
+}
+section#link-container section#link form input:focus {
+  outline: none;
+}
+section#link-container .copy {
+  display: flex;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+section#link-container .copy button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section#link-container .copy .copied {
+  background-color: hsl(257, 27%, 26%);
+}
+section#link-container .copy .regular {
+  background-color: hsl(180, 66%, 49%);
+}
+section#link-container .copy input {
+  border: none;
+}
+
+#copy {
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
