@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+header ul {
+  list-style: none;
+  color: hsl(257, 7%, 63%);
+}
+header button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  color: hsl(257, 7%, 63%);
+}
+header button:nth-of-type(1):hover {
+  color: hsl(260, 8%, 14%);
+}
+header button:nth-of-type(2) {
+  margin-left: 30px;
+  background-color: hsl(180, 66%, 49%);
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+}
+header button:nth-of-type(2):hover {
+  opacity: 0.8;
+}
+
+.slideAside {
+  display: none;
+}
+
+.slideOut {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .hide-on-mobile {
+    display: none;
+  }
+  header h1 {
+    font-size: 28px;
+    margin-top: -3px;
+  }
+  header img {
+    width: 25px;
+    cursor: pointer;
+  }
+  aside {
+    position: absolute;
+    top: 60px;
+    background-color: hsl(257, 27%, 26%);
+    padding: 20px;
+    border-radius: 10px;
+    left: 10px;
+    right: 10px;
+    transition: 0.2s;
+    text-align: center;
+  }
+  aside ul {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  aside ul hr {
+    margin-block: 20px;
+    border: none;
+    height: 1px;
+    width: 80%;
+    margin-inline: auto;
+    background-color: hsl(257, 7%, 63%);
+  }
+  aside ul li {
+    margin-block: 12px;
+    color: white;
+  }
+  aside ul button {
+    color: inherit;
+  }
+  aside ul li:nth-of-type(6) {
+    margin-top: 5px;
+  }
+  aside ul li:nth-of-type(6) button {
+    padding-block: 10px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: hsl(180, 66%, 49%);
+  }
+}
+@media (min-width: 650px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  .left-container {
+    display: flex;
+    align-items: center;
+  }
+  .left-container h1 {
+    font-size: 22px;
+    margin-top: -3px;
+  }
+  .left-container ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 35px;
+    font-weight: bold;
+  }
+  .left-container ul li:hover {
+    cursor: pointer;
+    color: hsl(260, 8%, 14%);
+  }
+}/*# sourceMappingURL=styles.css.map */
