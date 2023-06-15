@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(236, 236, 236);
+  background-color: rgba(216, 222, 223, 0.324);
 }
 
 header {
@@ -323,5 +323,76 @@ section#link-container .copy input {
   }
   footer ul:nth-of-type(2), footer ul:nth-of-type(3) {
     display: none;
+  }
+}
+section#advanced-statistics h2,
+section#advanced-statistics p {
+  text-align: center;
+}
+section#advanced-statistics h2 {
+  margin-bottom: 5px;
+}
+section#advanced-statistics .flex-container {
+  padding: 10px;
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+section#advanced-statistics .card {
+  background-color: white;
+  padding: 60px 30px 30px;
+  border-radius: 5px;
+  position: relative;
+}
+section#advanced-statistics .card img {
+  left: 20px;
+  top: -30px;
+  position: absolute;
+  background-color: hsl(257, 27%, 26%);
+  padding: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+section#advanced-statistics .card p {
+  text-align: left;
+  margin-block: 10px;
+}
+
+@media (max-width: 650px) {
+  section#advanced-statistics {
+    margin-top: 40px;
+  }
+  section#advanced-statistics p {
+    margin-bottom: 33px;
+  }
+  section#advanced-statistics .flex-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 650px) {
+  section#advanced-statistics {
+    margin-block: 40px;
+    padding-bottom: 80px;
+  }
+  section#advanced-statistics h2 {
+    font-size: 30px;
+  }
+  section#advanced-statistics p {
+    color: hsl(257, 7%, 63%);
+    max-width: 410px;
+    margin: auto;
+  }
+  section#advanced-statistics p:nth-of-type(1) {
+    margin-bottom: 20px;
+  }
+  section#advanced-statistics .flex-container .card:nth-of-type(2) {
+    position: relative;
+    bottom: -40px;
+  }
+  section#advanced-statistics .flex-container .card:nth-of-type(3) {
+    position: relative;
+    bottom: -80px;
   }
 }/*# sourceMappingURL=styles.css.map */
