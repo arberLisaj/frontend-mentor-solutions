@@ -20,6 +20,13 @@
         cursor: pointer;
       }
     }
+    .list {
+      li:nth-of-type(1) {
+        font-size: 17px;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+    }
     .socials {
       display: flex;
       li {

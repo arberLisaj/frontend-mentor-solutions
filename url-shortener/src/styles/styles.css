@@ -301,6 +301,11 @@ section#link-container .copy input {
   color: hsl(180, 66%, 49%);
   cursor: pointer;
 }
+.footer-wrapper footer .list li:nth-of-type(1) {
+  font-size: 17px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
 .footer-wrapper footer .socials {
   display: flex;
 }
