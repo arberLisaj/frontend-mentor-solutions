@@ -277,7 +277,7 @@ section#link-container .copy input {
     margin-block: 30px 60px;
   }
   section#link-container section#link {
-    padding-block: 30px;
+    padding: 50px 60px;
   }
 }
 .footer-wrapper {
