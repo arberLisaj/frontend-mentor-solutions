@@ -11,6 +11,7 @@ const schema = z.object({
 const LinkInput = () => {
   const [data, setData] = useState();
   const [url, setUrl] = useState("github.com/arberlisaj");
+
   // setUrl("arberlisaj.com");
   useEffect(() => {
     const fetchUsers = async () => {
@@ -44,10 +45,17 @@ const LinkInput = () => {
   };
   const [hideCopyLink, setHideLink] = useState(true);
   const displayURL = data ? data.result.short_link : "";
+
+  const [copyLinkState, setCopyLinkState] = useState(false);
   return (
     <section id="link-container">
       <section id="link">
-        <form onSubmit={handleSubmit((data) => onSubmit(data))}>
+        <form
+          onSubmit={handleSubmit((data) => {
+            onSubmit(data);
+            setCopyLinkState(true);
+          })}
+        >
           <input
             {...register("url")}
             type="text"
@@ -56,12 +64,13 @@ const LinkInput = () => {
           <button onClick={() => setHideLink(false)}>Shorten</button>
         </form>
       </section>
-      <div className={hideCopyLink ? "hide copy" : "show copy"}>
-        <input type="text" id="copy" value={displayURL} readOnly />
-        <button className={isCopied ? "copied" : "regular"} onClick={handleCopy}>
-          {isCopied ? "Copied!" : "Copy"}
-        </button>
-      </div>
+
+      {copyLinkState && (
+        <div className={hideCopyLink ? "hide copy" : "show copy"}>
+          <input type="text" id="copy" value={displayURL} readOnly />
+          <button onClick={handleCopy}>{isCopied ? "Copied!" : "Copy"}</button>
+        </div>
+      )}
     </section>
   );
 };

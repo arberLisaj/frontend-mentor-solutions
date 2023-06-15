@@ -202,6 +202,7 @@ section#hero button {
   }
 }
 section#link-container {
+  overflow: hidden;
   width: 80%;
   max-width: 1100px;
   margin: auto;
@@ -249,16 +250,11 @@ section#link-container .copy {
 }
 section#link-container .copy button {
   border: none;
+  background-color: hsl(180, 66%, 49%);
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
-}
-section#link-container .copy .copied {
-  background-color: hsl(257, 27%, 26%);
-}
-section#link-container .copy .regular {
-  background-color: hsl(180, 66%, 49%);
 }
 section#link-container .copy input {
   border: none;
@@ -274,4 +270,58 @@ section#link-container .copy input {
 
 .show {
   display: block;
+}
+
+@media (min-width: 650px) {
+  section#link-container section#link {
+    padding-block: 30px;
+  }
+}
+.footer-wrapper {
+  background-color: hsl(260, 8%, 14%);
+  color: white;
+  margin-top: 20px;
+}
+.footer-wrapper footer {
+  padding: 40px 15px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper footer ul {
+  list-style: none;
+}
+.footer-wrapper footer ul li {
+  margin-bottom: 5px;
+}
+.footer-wrapper footer ul li:hover {
+  color: hsl(180, 66%, 49%);
+  cursor: pointer;
+}
+.footer-wrapper footer .socials {
+  display: flex;
+}
+.footer-wrapper footer .socials li {
+  margin-inline: 5px;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  footer h2 {
+    display: none;
+  }
+  footer .socials {
+    margin-bottom: 10px;
+  }
+  footer ul {
+    text-align: center;
+  }
+  footer ul:nth-of-type(2), footer ul:nth-of-type(3) {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

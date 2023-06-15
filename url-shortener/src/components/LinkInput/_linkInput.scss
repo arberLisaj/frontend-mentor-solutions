@@ -1,5 +1,6 @@
 @import "../../styles/variables";
 section#link-container {
+  overflow: hidden;
   width: 80%;
   max-width: 1100px;
   margin: auto;
@@ -41,6 +42,7 @@ section#link-container {
       }
     }
   }
+
   .copy {
     display: flex;
     padding: 10px 20px;
@@ -50,17 +52,13 @@ section#link-container {
     button {
       border: none;
 
+      background-color: variables.$cyan;
       color: white;
       padding: 5px 10px;
       border-radius: 5px;
       cursor: pointer;
     }
-    .copied {
-      background-color: variables.$dark-violet;
-    }
-    .regular {
-      background-color: variables.$cyan;
-    }
+
     input {
       border: none;
     }
@@ -75,4 +73,13 @@ section#link-container {
 }
 .show {
   display: block;
+}
+
+// desktop styles
+@media (min-width: 650px) {
+  section#link-container {
+    section#link {
+      padding-block: 30px;
+    }
+  }
 }
