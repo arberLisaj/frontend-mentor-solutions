@@ -34,6 +34,29 @@ section#advanced-statistics {
       margin-block: 10px;
     }
   }
+
+  section#boost {
+    background-color: variables.$dark-violet;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    h1 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+    button {
+      border: none;
+      color: white;
+      background-color: variables.$cyan;
+      border-radius: 20px;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+  }
 }
 
 // mobile designe
@@ -52,8 +75,7 @@ section#advanced-statistics {
 
 @media (min-width: 650px) {
   section#advanced-statistics {
-    margin-block: 40px;
-    padding-bottom: 80px;
+    margin-top: 40px;
     h2 {
       font-size: 30px;
     }
@@ -62,8 +84,8 @@ section#advanced-statistics {
       max-width: 410px;
       margin: auto;
     }
-    p:nth-of-type(1){
-        margin-bottom: 20px;
+    p:nth-of-type(1) {
+      margin-bottom: 20px;
     }
     .flex-container {
       .card:nth-of-type(2) {
@@ -73,6 +95,17 @@ section#advanced-statistics {
       .card:nth-of-type(3) {
         position: relative;
         bottom: -80px;
+      }
+    }
+    section#boost {
+      margin-top: 150px;
+      padding: 40px;
+      h1{
+        font-size: 2rem;
+      }
+      button{
+        padding: 10px 30px;
+        // margin-bottom: 10px;
       }
     }
   }

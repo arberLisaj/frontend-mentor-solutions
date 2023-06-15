@@ -273,6 +273,9 @@ section#link-container .copy input {
 }
 
 @media (min-width: 650px) {
+  section#link-container {
+    margin-block: 30px 60px;
+  }
   section#link-container section#link {
     padding-block: 30px;
   }
@@ -280,7 +283,6 @@ section#link-container .copy input {
 .footer-wrapper {
   background-color: hsl(260, 8%, 14%);
   color: white;
-  margin-top: 20px;
 }
 .footer-wrapper footer {
   padding: 40px 15px;
@@ -304,6 +306,11 @@ section#link-container .copy input {
 }
 .footer-wrapper footer .socials li {
   margin-inline: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.footer-wrapper footer .socials li:hover {
+  transform: scale(1.05);
 }
 
 @media (max-width: 800px) {
@@ -321,7 +328,8 @@ section#link-container .copy input {
   footer ul {
     text-align: center;
   }
-  footer ul:nth-of-type(2), footer ul:nth-of-type(3) {
+  footer ul:nth-of-type(2),
+  footer ul:nth-of-type(3) {
     display: none;
   }
 }
@@ -359,6 +367,28 @@ section#advanced-statistics .card p {
   text-align: left;
   margin-block: 10px;
 }
+section#advanced-statistics section#boost {
+  background-color: hsl(257, 27%, 26%);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+section#advanced-statistics section#boost h1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+section#advanced-statistics section#boost button {
+  border: none;
+  color: white;
+  background-color: hsl(180, 66%, 49%);
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+section#advanced-statistics section#boost button:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 650px) {
   section#advanced-statistics {
@@ -373,8 +403,7 @@ section#advanced-statistics .card p {
 }
 @media (min-width: 650px) {
   section#advanced-statistics {
-    margin-block: 40px;
-    padding-bottom: 80px;
+    margin-top: 40px;
   }
   section#advanced-statistics h2 {
     font-size: 30px;
@@ -394,5 +423,15 @@ section#advanced-statistics .card p {
   section#advanced-statistics .flex-container .card:nth-of-type(3) {
     position: relative;
     bottom: -80px;
+  }
+  section#advanced-statistics section#boost {
+    margin-top: 150px;
+    padding: 40px;
+  }
+  section#advanced-statistics section#boost h1 {
+    font-size: 2rem;
+  }
+  section#advanced-statistics section#boost button {
+    padding: 10px 30px;
   }
 }/*# sourceMappingURL=styles.css.map */

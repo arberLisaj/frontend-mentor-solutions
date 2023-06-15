@@ -78,6 +78,7 @@ section#link-container {
 // desktop styles
 @media (min-width: 650px) {
   section#link-container {
+    margin-block: 30px 60px;
     section#link {
       padding-block: 30px;
     }

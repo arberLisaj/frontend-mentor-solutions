@@ -2,7 +2,7 @@
 .footer-wrapper {
   background-color: variables.$very-dark-violet;
   color: white;
-  margin-top: 20px;
+  // margin-top: 20px;
   footer {
     padding: 40px 15px;
     max-width: 1200px;
@@ -24,6 +24,10 @@
       display: flex;
       li {
         margin-inline: 5px;
+        height: fit-content;
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
@@ -38,13 +42,15 @@
     h2 {
       display: none;
     }
-    .socials{
+    .socials {
       margin-bottom: 10px;
     }
-    ul{
+
+    ul {
       text-align: center;
     }
-    ul:nth-of-type(2), ul:nth-of-type(3){
+    ul:nth-of-type(2),
+    ul:nth-of-type(3) {
       display: none;
     }
   }
