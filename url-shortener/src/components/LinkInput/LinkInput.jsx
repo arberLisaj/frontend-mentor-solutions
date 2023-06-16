@@ -59,7 +59,7 @@ const LinkInput = () => {
           <input
             {...register("url")}
             type="text"
-            placeholder="Enter a url ..."
+            placeholder="Shorten your url..."
           />
           <button onClick={() => setHideLink(false)}>Shorten</button>
         </form>

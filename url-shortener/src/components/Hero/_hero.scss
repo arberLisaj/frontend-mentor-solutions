@@ -8,7 +8,7 @@ section#hero {
   }
 
   button {
-    color: white;
+    color: variables.$white;
     background-color: variables.$cyan;
     border: none;
     font-size: 16px;
@@ -29,12 +29,11 @@ section#hero {
       h1 {
         font-size: 30px;
         line-height: 30px;
-        margin-block:40px 10px;
+        margin-block: 40px 10px;
       }
-      p{
+      p {
         font-size: 15px;
-        padding-inline:15px;
-        
+        padding-inline: 15px;
       }
       button {
         display: block;

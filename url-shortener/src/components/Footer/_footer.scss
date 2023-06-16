@@ -1,7 +1,7 @@
 @use "../../styles/variables";
 .footer-wrapper {
   background-color: variables.$very-dark-violet;
-  color: white;
+  color: variables.$white;
   // margin-top: 20px;
   footer {
     padding: 40px 15px;

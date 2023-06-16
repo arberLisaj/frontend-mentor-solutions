@@ -21,7 +21,7 @@ section#link-container {
 
       button {
         background-color: variables.$cyan;
-        color: white;
+        color: variables.$white;
         height: 35px;
         padding-inline: 25px;
         margin-left: 20px;
@@ -46,14 +46,14 @@ section#link-container {
   .copy {
     display: flex;
     padding: 10px 20px;
-    background-color: white;
+    background-color: variables.$white;
     border-radius: 10px;
     margin-top: 10px;
     button {
       border: none;
 
       background-color: variables.$cyan;
-      color: white;
+      color: variables.$white;
       padding: 5px 10px;
       border-radius: 5px;
       cursor: pointer;
@@ -78,7 +78,7 @@ section#link-container {
 // desktop styles
 @media (min-width: 650px) {
   section#link-container {
-    margin-block: 30px 60px;
+    margin-block: 30px 90px;
     section#link {
       padding: 50px 60px;
     }

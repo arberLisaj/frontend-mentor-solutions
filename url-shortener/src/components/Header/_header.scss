@@ -6,7 +6,7 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: auto;
-  padding:15px 10px;
+  padding: 15px 10px;
 
   ul {
     list-style: none;
@@ -29,7 +29,7 @@ header {
     background-color: variables.$cyan;
     padding: 8px 20px;
     border-radius: 20px;
-    color: white;
+    color: variables.$white;
   }
   button:nth-of-type(2):hover {
     opacity: 0.8;
@@ -81,7 +81,7 @@ header {
       }
       li {
         margin-block: 12px;
-        color: white;
+        color: variables.$white;
       }
       button {
         color: inherit;
