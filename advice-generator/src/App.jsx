@@ -14,9 +14,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    const controller = new AbortController();
     getAdvice();
-    return () => controller.abort();
   }, []);
 
   return (

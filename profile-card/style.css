@@ -42,7 +42,6 @@ main .profile-picture {
     max-width: 320px;
   }
   main .top {
-    /* padding-block: 20px; */
     height: 110px;
     position: relative;
     margin-bottom: 55px;

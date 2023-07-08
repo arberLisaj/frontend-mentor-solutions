@@ -10,6 +10,8 @@
 }
 body {
   background-color: variables.$white;
+  max-height: 110vh;
+  overflow: hidden
 }
 
 // partial navbar styles

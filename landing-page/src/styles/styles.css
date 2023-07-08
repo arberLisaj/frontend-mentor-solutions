@@ -9,6 +9,8 @@
 
 body {
   background-color: hsl(0, 0%, 97%);
+  max-height: 110vh;
+  overflow: hidden;
 }
 
 nav {
@@ -199,7 +201,6 @@ section#hero ul {
     display: none;
   }
   section#hero {
-    padding-top: 4em;
     max-width: 1150px;
     margin: auto;
     display: flex;

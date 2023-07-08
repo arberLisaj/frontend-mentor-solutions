@@ -11,7 +11,7 @@ body {
 
 main {
   width: 80%;
-  max-width: 600px;
+  max-width: 570px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,17 +29,17 @@ header {
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  padding: 40px 20px;
+  padding: 30px 20px;
 }
 
 section {
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 10px;
-  padding: 20px 40px;
+  padding: 20px 30px;
   background-color: hsl(33, 100%, 98%);
 }
-section h1 {
-  font-size: 40px;
+section h1#spending {
+  font-size: 30px;
   padding-block: 20px 60px;
 }
 section article {
@@ -85,7 +85,7 @@ section article div p {
   color: hsl(28, 10%, 53%);
 }
 section hr {
-  margin-block: 40px;
+  margin-block: 30px;
   border: 1px solid hsl(27, 66%, 92%);
   background-color: transparent;
 }
@@ -93,19 +93,13 @@ section footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-section footer h1 {
-  line-height: 24px;
+  padding-bottom: 20px;
 }
 section footer span {
   color: hsl(28, 10%, 53%);
 }
 section footer .monthly span {
   position: relative;
-  bottom: -5px;
-}
-section footer .lastMonth {
-  padding-bottom: 25px;
 }
 section footer .lastMonth p {
   font-size: 18px;

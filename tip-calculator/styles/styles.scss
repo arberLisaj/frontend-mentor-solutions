@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Space Mono", monospace;
-  //   outline: 1px solid black;
   font-size: 14px;
 }
 $primary-cyan: hsl(172, 67%, 45%);
@@ -21,10 +20,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
 body {
   background-color: $light-grayish-cyan;
   padding-inline: 8px;
@@ -156,7 +151,6 @@ header {
     color: $white;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    // grid-template-rows: 1fr 2fr;
 
     h2 {
       grid-row: span 2;
@@ -164,7 +158,6 @@ header {
       line-height: 45px;
       word-break: break-all;
       text-align: right;
-      // margin-left: -30px;
     }
     p {
       line-height: 16px;
@@ -219,7 +212,6 @@ header {
         width: 120px;
       }
       label {
-        // height: 35px;
         width: 100%;
         padding-top: 8px;
    
@@ -266,7 +258,6 @@ header {
     border-radius: 20px;
   }
   #left {
-    // background-color: red;
     margin-top: -10px;
     input {
       font-size: 18px;
@@ -284,7 +275,6 @@ header {
       h2 {
         font-size: 35px;
         line-height: 45px;
-        // margin-left: -30px;
       }
       p {
         line-height: 16px;

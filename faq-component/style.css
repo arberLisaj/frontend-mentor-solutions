@@ -30,6 +30,8 @@ body {
 main {
   background-color: white;
   margin: auto;
+  width: 80%;
+  max-width:1200px ;
 }
 img {
   max-width: 100%;
@@ -56,7 +58,7 @@ img {
   }
   p {
     margin-block: 10px 20px;
-    color: rgb(62, 62, 62);
+    color: rgb(110, 110, 110);
   }
 }
 

@@ -2,23 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // outline: 1px solid black;
 }
-// @font-face {
-//   font-family: "Inter";
-//   src: url(https://fonts.google.com/specimen/Inter)
-//     format("truetype-variations");
-//   font-weight: 1 999;
-//   font-display: swap;
-// }
+
 $primary-soft-orange: hsl(35, 77%, 62%);
 $primary-soft-red: hsl(5, 85%, 63%);
-
 $neutral-off-white: hsl(36, 100%, 99%);
 $neutral-grayish-blue: hsl(233, 8%, 79%);
 $dark-grayish-blue: hsl(236, 13%, 42%);
 $very-dark-blue: hsl(240, 100%, 5%);
 
+button:hover {
+  opacity: 0.8;
+}
 body {
   font-family: Inter, sans-serif;
   padding-inline: 10px;
@@ -37,7 +32,6 @@ body {
   }
 }
 
-// styling the small screen first
 header {
   display: flex;
   justify-content: space-between;
@@ -48,7 +42,6 @@ header {
   a {
     text-decoration: none;
     color: $dark-grayish-blue;
-    // font-weight: 500;
     font-size: 20px;
   }
 }
@@ -143,8 +136,7 @@ section.topics {
         a {
           text-decoration: none;
           color: $dark-grayish-blue;
-          // font-weight: 500;
-          font-size: 22px;
+          font-size: 20px;
         }
       }
     }
@@ -238,7 +230,7 @@ section.topics {
       align-items: center;
 
       a {
-        margin-inline-end: 10px;
+        margin-left: 10px;
         font-size: 18px;
       }
       a:hover {
@@ -277,7 +269,6 @@ section.topics {
       height: fit-content;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      // grid-template-rows: 1fr 1fr;
 
       img {
         grid-column: span 2;
@@ -287,7 +278,6 @@ section.topics {
         font-size: 40px;
         line-height: 40px;
         padding-block: 20px;
-        // font-weight: 700;
       }
 
       .right_container {

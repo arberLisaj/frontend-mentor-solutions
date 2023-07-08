@@ -29,11 +29,6 @@ body {
     -webkit-appearance: none;
     margin: 0;
   }
-
-  /* Firefox */
-  input[type="number"] {
-    -moz-appearance: textfield;
-  }
 }
 main {
   background-color: $white;
@@ -128,7 +123,6 @@ main {
     padding: 10px;
 
     header {
-      // background-color: red;
       width: 100%;
       justify-content: space-between;
 
@@ -148,7 +142,6 @@ main {
       button {
         position: absolute;
         display: block;
-        //center the button
         left: 50%;
         padding: 8px;
         transform: translateX(-50%);
@@ -165,13 +158,12 @@ main {
     }
   }
 }
-// desktop size
+// desktop styles 
 @media (min-width: 800px) {
   main {
     width: 580px;
     padding: 40px;
 
-    //main header
     header {
       section {
         margin-right: 20px;

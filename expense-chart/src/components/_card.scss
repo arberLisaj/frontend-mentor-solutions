@@ -1,11 +1,11 @@
 @use "../Styles/variables";
 section {
-  margin-top: 20px;
+  margin-top: 10px;
   border-radius: 10px;
-  padding: 20px 40px;
+  padding: 20px 30px;
   background-color: variables.$very-pale-orange;
-  h1 {
-    font-size: 40px;
+  h1#spending {
+    font-size: 30px;
     padding-block: 20px 60px;
   }
   article {
@@ -54,7 +54,7 @@ section {
     }
   }
   hr {
-    margin-block: 40px;
+    margin-block: 30px;
     border: 1px solid variables.$cream;
 
     background-color: transparent;
@@ -64,20 +64,17 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1 {
-      line-height: 24px;
-    }
+    padding-bottom: 20px;
+  
     span {
       color: variables.$medium-brown;
     }
     .monthly {
       span {
         position: relative;
-        bottom: -5px;
       }
     }
     .lastMonth {
-      padding-bottom: 25px;
       p {
         font-size: 18px;
       }

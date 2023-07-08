@@ -52,7 +52,6 @@ main button {
   display: grid;
   place-content: center;
   border-radius: 50%;
-  /* position: relative; */
   margin-bottom: -35px;
   cursor: pointer;
   border: none;

@@ -37,7 +37,7 @@ const Card = ({
     +sunPrice;
   return (
     <section>
-      <h1>Spending - Last 7 Days</h1>
+      <h1 id="spending">Spending - Last 7 Days</h1>
       <article>
         <div className="mon ">
           <div style={{ height: mon }} className="candle">
