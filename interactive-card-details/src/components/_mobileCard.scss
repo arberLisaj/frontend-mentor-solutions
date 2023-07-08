@@ -1,0 +1,69 @@
+section#mobileCard {
+  background: url("../assets/bg-main-mobile.png");
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .cards-wrapper {
+    max-width: 500px;
+    margin: auto;
+  }
+  .card {
+    background-color: red;
+    height: 185px;
+    width: 100%;
+    max-width: 320px;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .back-card {
+    background: url("../assets/bg-card-back.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    padding: 0 0 5px 230px;
+    margin-left: auto;
+    z-index: 99;
+  }
+  .front-card {
+    background: url("../assets/bg-card-front.png");
+    margin-top: -80px;
+    z-index: 999;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .ball-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .ball1 {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      .ball2 {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 1px solid white;
+      }
+    }
+    #card-number {
+      padding-top: 35px;
+      text-align: center;
+      font-size: 22px;
+      font-family: cursive;
+    }
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 15px 0;
+    }
+  }
+}
