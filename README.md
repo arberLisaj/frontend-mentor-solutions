@@ -8,7 +8,8 @@
 | 05 | [Landing Page](https://github.com/arberLisaj/frontend-mentor/tree/main/news-homepage)| [View Live](https://news-homepage101.netlify.app/)|
 | 06 | [Landing Page 2](https://github.com/arberLisaj/frontend-mentor/tree/main/landing-page)| [View Live](https://intro101.netlify.app/)|
 | 07 | [Faq Component](https://github.com/arberLisaj/frontend-mentor/tree/main/faq-component)| [View Live](https://faq101.netlify.app/)|
-| 08 | [Url Shortener](https://github.com/arberLisaj/frontend-mentor-solutions/tree/main/url-shortener)| [View Live](https://url-shortener010.netlify.app/)    |
-| 09 | [Expense Chart](https://github.com/arberLisaj/frontend-mentor/tree/main/expense-chart)| [View Live](https://expense-chart-component101.netlify.app/)|
-| 10 | [Tip Calculator](https://github.com/arberLisaj/frontend-mentor/tree/main/tip-calculator)| [View Live](https://tip-calculator101.netlify.app/)|
-| 11 | [Age Calculator](https://github.com/arberLisaj/frontend-mentor/tree/main/age-calculator)| [View Live](https://frontend-mentor-age-calculator101.netlify.app/) |
+| 08 | [Interactive Card Details](https://github.com/arberLisaj/frontend-mentor/tree/main/interactive-card-details)| [View Live](https://ccdetails.netlify.app/)|
+| 09 | [Url Shortener](https://github.com/arberLisaj/frontend-mentor-solutions/tree/main/url-shortener)| [View Live](https://url-shortener010.netlify.app/)    |
+| 10 | [Expense Chart](https://github.com/arberLisaj/frontend-mentor/tree/main/expense-chart)| [View Live](https://expense-chart-component101.netlify.app/)|
+| 11 | [Tip Calculator](https://github.com/arberLisaj/frontend-mentor/tree/main/tip-calculator)| [View Live](https://tip-calculator101.netlify.app/)|
+| 12 | [Age Calculator](https://github.com/arberLisaj/frontend-mentor/tree/main/age-calculator)| [View Live](https://frontend-mentor-age-calculator101.netlify.app/) |
