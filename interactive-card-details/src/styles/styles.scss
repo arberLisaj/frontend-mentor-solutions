@@ -26,6 +26,10 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+span#name {
+  text-transform: capitalize;
+}
+
 section#form {
   width: 80%;
   max-width: 400px;
@@ -44,7 +48,7 @@ section#form {
       input {
         height: 40px;
       }
-      label#exp {
+      label.exp {
         grid-column: span 2;
       }
 
@@ -78,7 +82,7 @@ section#form {
     color: variables.$white;
     margin-top: 15px;
     font-family: cursive;
-    cursor: pointer
+    cursor: pointer;
   }
 }
 // import mobile cards

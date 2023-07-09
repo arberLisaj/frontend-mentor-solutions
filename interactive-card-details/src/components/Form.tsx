@@ -3,9 +3,26 @@ interface Props {
   setUsername: (something: string) => void;
   cardNumber: string;
   setCardNumber: (something: string) => void;
+  expDate: string;
+  setExpDate: (something: string) => void;
+  expYear: string;
+  setExpYear: (something: string) => void;
+  cvc: string;
+  setCvc: (something: string) => void;
 }
 
-const Form = ({ username, setUsername, cardNumber, setCardNumber }: Props) => {
+const Form = ({
+  username,
+  setUsername,
+  cardNumber,
+  setCardNumber,
+  expDate,
+  setExpDate,
+  expYear,
+  setExpYear,
+  cvc,
+  setCvc,
+}: Props) => {
   return (
     <section id="form">
       <label htmlFor="cardholder">CARDHOLDER NAME</label>
@@ -19,6 +36,7 @@ const Form = ({ username, setUsername, cardNumber, setCardNumber }: Props) => {
 
       <label htmlFor="cardnumber">CARD NUMBER</label>
       <input
+        id="cardnumber"
         value={cardNumber}
         onChange={(e) => setCardNumber(e.target.value)}
         type="number"
@@ -28,17 +46,33 @@ const Form = ({ username, setUsername, cardNumber, setCardNumber }: Props) => {
       <div className="flex">
         <div className="exp-date">
           <div className="month-year">
-            <label id="exp" htmlFor="exp">
+            <label className="exp" htmlFor="exp">
               Exp Date (MM / YY)
             </label>
-            <label htmlFor="cvc">CVC</label>
-            <input id="exp" type="number" placeholder="MM" />
-            <input type="number" placeholder="YY" />
-            <input id="cvc" type="number" placeholder="e.g. 123" />
+            <label>CVC</label>
+            <input
+              value={expDate}
+              onChange={(e) => setExpDate(e.target.value)}
+              type="number"
+              placeholder="MM"
+            />
+            <input
+              value={expYear}
+              onChange={(e) => setExpYear(e.target.value)}
+              type="number"
+              placeholder="YY"
+            />
+            <input
+              id="cvc"
+              value={cvc}
+              onChange={(e) => setCvc(e.target.value)}
+              type="number"
+              placeholder="e.g. 123"
+            />
           </div>
         </div>
       </div>
-      <button>confirm</button>
+      <button>Confirm</button>
     </section>
   );
 };

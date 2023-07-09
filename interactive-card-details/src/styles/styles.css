@@ -21,6 +21,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+span#name {
+  text-transform: capitalize;
+}
+
 section#form {
   width: 80%;
   max-width: 400px;
@@ -39,7 +43,7 @@ section#form .flex .month-year {
 section#form .flex .month-year input {
   height: 40px;
 }
-section#form .flex .month-year label#exp {
+section#form .flex .month-year label.exp {
   grid-column: span 2;
 }
 section#form .flex .month-year .cvc {
@@ -99,8 +103,8 @@ section#mobileCard .back-card {
   background-repeat: no-repeat;
   display: grid;
   place-content: center;
-  font-size: 18px;
-  padding: 0 0 5px 230px;
+  font-size: 16px;
+  padding: 0 0 5px 220px;
   margin-left: auto;
   z-index: 99;
 }
