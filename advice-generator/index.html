@@ -2,12 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <script src="app.js" defer></script>
     <title>Advice Generator</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <main>
+      <p>Advice #<span></span></p>
+      <h1 id="result"></h1>
+      <img
+        class="devider"
+        src="./images/pattern-divider-mobile.svg"
+        alt="devider"
+      />
+      <button onclick="getData()">
+        <img src="./images/icon-dice.svg" alt="dice" />
+      </button>
+    </main>
   </body>
 </html>
