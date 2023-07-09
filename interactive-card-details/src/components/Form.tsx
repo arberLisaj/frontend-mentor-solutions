@@ -32,13 +32,20 @@ const Form = ({
         id="cardholder"
         type="text"
         placeholder="e.g. Jane AppleSeed"
+        maxLength={20}
       />
 
       <label htmlFor="cardnumber">CARD NUMBER</label>
       <input
         id="cardnumber"
         value={cardNumber}
-        onChange={(e) => setCardNumber(e.target.value)}
+        onChange={(e) => {
+          let value = "";
+          value += e.target.value;
+          if (+value >= 0) {
+            setCardNumber(value.substring(0,16));
+          }
+        }}
         type="number"
         placeholder="e.g 1234 5678 9101 0000"
       />
@@ -52,21 +59,43 @@ const Form = ({
             <label htmlFor="cvcnumber">CVC</label>
             <input
               id="cvcnumber"
+              maxLength={3}
               value={expDate}
-              onChange={(e) => setExpDate(e.target.value)}
+              onChange={(e) => {
+                let value = "";
+                value += e.target.value;
+                let trimValue = +value.substring(0, 2);
+                if (trimValue >= 0) {
+                  setExpDate(trimValue.toString());
+                }
+              }}
               type="number"
               placeholder="MM"
             />
             <input
               value={expYear}
-              onChange={(e) => setExpYear(e.target.value)}
+              onChange={(e) => {
+                let value = "";
+                value += e.target.value;
+                let trimValue = +value.substring(0, 2);
+                if (trimValue >= 0) {
+                  setExpYear(trimValue.toString());
+                }
+              }}
               type="number"
               placeholder="YY"
             />
             <input
               id="cvc"
               value={cvc}
-              onChange={(e) => setCvc(e.target.value)}
+              onChange={(e) => {
+                let value = "";
+                value += e.target.value;
+                let trimValue = +value.substring(0, 3);
+                if (trimValue >= 0) {
+                  setCvc(trimValue.toString());
+                }
+              }}
               type="number"
               placeholder="e.g. 123"
             />

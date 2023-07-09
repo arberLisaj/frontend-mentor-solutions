@@ -13,6 +13,11 @@ body {
   img {
     max-width: 100%;
   }
+  input {
+    &:focus {
+      outline: 1px solid blue;
+    }
+  }
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -61,7 +66,7 @@ section#form {
       }
 
       .cvc {
-        background-color: red;
+        background-color: variables.$red;
       }
     }
   }
@@ -95,7 +100,7 @@ section#form {
 }
 
 // desktop styles
-@media (min-width: 950px) {
+@media (min-width: 1050px) {
   .hide-on-desktop {
     display: none;
   }
@@ -104,17 +109,15 @@ section#form {
   }
 
   main {
-   
+    padding-right: 40px;
     #desktop-cards {
       height: 100vh;
       top: 0;
       left: 0;
       width: 30%;
       background: url("../assets/bg-main-desktop.png");
-      margin-right: 10px;
       background-size: cover;
-      color: white;
-
+      color: variables.$white;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -122,9 +125,8 @@ section#form {
       gap: 20px;
 
       .card {
-        background-color: gainsboro;
-        width: 340px;
-        height: 200px;
+        width: 360px;
+        height: 210px;
         border-radius: 10px;
         padding: 20px;
       }
@@ -136,22 +138,22 @@ section#form {
         .ball-container {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 8px;
           .ball1 {
             height: 40px;
             width: 40px;
             border-radius: 50%;
-            background-color: white;
+            background-color: variables.$white;
           }
           .ball2 {
             height: 20px;
             width: 20px;
             border-radius: 50%;
-            border: 1px solid white;
+            border: 1px solid variables.$white;
           }
         }
         #card-number {
-          font-size: 23px;
+          font-size: 25px;
           letter-spacing: 2px;
           margin-block: 50px 15px;
           display: block;
