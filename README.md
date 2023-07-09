@@ -1,7 +1,7 @@
 
 |  #  |GitHub Repo| Live Site| Tools |
-| :-: | - | - | - |
-| 01 | [Product Review](https://github.com/arberLisaj/frontend-mentor/tree/main/product-preview)| [View Live](https://product-preview-component101.netlify.app/)| -`HTML` `SCSS`- |
+| :-: | - | - | :- |
+| 01 | [Product Review](https://github.com/arberLisaj/frontend-mentor/tree/main/product-preview)| [View Live](https://product-preview-component101.netlify.app/)| `HTML` `SCSS` |
 | 02 | [Profile Card ](https://github.com/arberLisaj/frontend-mentor/tree/main/profile-card)| [View Live](https://profile-card101.netlify.app/)| `HTML` `CSS` |
 | 03 | [Faq Component](https://github.com/arberLisaj/frontend-mentor/tree/main/faq-component)| [View Live](https://faq101.netlify.app/)| `HTML` `CSS` |
 | 04 | [Landing Page 2](https://github.com/arberLisaj/frontend-mentor/tree/main/landing-page)| [View Live](https://intro101.netlify.app/)| `React` `SCSS` |
