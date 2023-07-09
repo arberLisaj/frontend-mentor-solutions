@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  word-break: break-all;
 }
 
 body {
@@ -29,10 +30,17 @@ input[type="number"] {
 span#name {
   text-transform: capitalize;
 }
+span#card-number {
+  line-height: 15px;
+}
 
+.hide-on-mobile {
+  display: none;
+}
+// form section styles
 section#form {
   width: 80%;
-  max-width: 400px;
+  max-width: 370px;
   margin: auto;
   padding-top: 35px;
 
@@ -85,5 +93,102 @@ section#form {
     cursor: pointer;
   }
 }
+
+// desktop styles
+@media (min-width: 950px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  .hide-on-mobile {
+    display: block;
+  }
+
+  main {
+   
+    #desktop-cards {
+      height: 100vh;
+      top: 0;
+      left: 0;
+      width: 30%;
+      background: url("../assets/bg-main-desktop.png");
+      margin-right: 10px;
+      background-size: cover;
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 20px;
+
+      .card {
+        background-color: gainsboro;
+        width: 340px;
+        height: 200px;
+        border-radius: 10px;
+        padding: 20px;
+      }
+      .front-card {
+        background: url("../assets/bg-card-front.png");
+        background-size: cover;
+        margin-right: -80px;
+
+        .ball-container {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          .ball1 {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: white;
+          }
+          .ball2 {
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 1px solid white;
+          }
+        }
+        #card-number {
+          font-size: 23px;
+          letter-spacing: 2px;
+          margin-block: 50px 15px;
+          display: block;
+          text-align: center;
+          font-family: cursive;
+        }
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 15px;
+        }
+      }
+      .back-card {
+        background: url("../assets/bg-card-back.png");
+        background-size: cover;
+        background-position: center;
+        margin-right: -150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        #back-number {
+          padding-bottom: 5px;
+          padding-right: 13px;
+          text-align: right;
+          display: block;
+        }
+      }
+    }
+
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+}
+
 // import mobile cards
 @import "../components/mobileCard";

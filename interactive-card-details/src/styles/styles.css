@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  word-break: break-all;
 }
 
 body img {
@@ -25,9 +26,17 @@ span#name {
   text-transform: capitalize;
 }
 
+span#card-number {
+  line-height: 15px;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
 section#form {
   width: 80%;
-  max-width: 400px;
+  max-width: 370px;
   margin: auto;
   padding-top: 35px;
 }
@@ -77,6 +86,93 @@ section#form button {
   cursor: pointer;
 }
 
+@media (min-width: 950px) {
+  .hide-on-desktop {
+    display: none;
+  }
+  .hide-on-mobile {
+    display: block;
+  }
+  main {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+  main #desktop-cards {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 30%;
+    background: url("../assets/bg-main-desktop.png");
+    margin-right: 10px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  main #desktop-cards .card {
+    background-color: gainsboro;
+    width: 340px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  main #desktop-cards .front-card {
+    background: url("../assets/bg-card-front.png");
+    background-size: cover;
+    margin-right: -80px;
+  }
+  main #desktop-cards .front-card .ball-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  main #desktop-cards .front-card .ball-container .ball1 {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  main #desktop-cards .front-card .ball-container .ball2 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+  }
+  main #desktop-cards .front-card #card-number {
+    font-size: 23px;
+    letter-spacing: 2px;
+    margin-block: 50px 15px;
+    display: block;
+    text-align: center;
+    font-family: cursive;
+  }
+  main #desktop-cards .front-card .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  main #desktop-cards .back-card {
+    background: url("../assets/bg-card-back.png");
+    background-size: cover;
+    background-position: center;
+    margin-right: -150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  main #desktop-cards .back-card #back-number {
+    padding-bottom: 5px;
+    padding-right: 13px;
+    text-align: right;
+    display: block;
+  }
+}
 section#mobileCard {
   background: url("../assets/bg-main-mobile.png");
   padding: 10px;
@@ -101,10 +197,11 @@ section#mobileCard .back-card {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  place-content: center;
-  font-size: 16px;
-  padding: 0 0 5px 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding-bottom: 3px;
   margin-left: auto;
   z-index: 99;
 }

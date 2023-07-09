@@ -2,6 +2,7 @@ import { useState } from "react";
 import Form from "./components/Form";
 import MobileCards from "./components/MobileCards";
 import "./styles/styles.css";
+import DesktopCards from "./components/DesktopCards";
 const App = () => {
   const [username, setUsername] = useState("");
   const [cardNumber, setCardNumber] = useState("");
@@ -16,6 +17,13 @@ const App = () => {
         expDate={expDate}
         expYear={expYear}
         cvc={cvc}
+      />
+      <DesktopCards
+        cardNumber={cardNumber}
+        cardName={username}
+        expDate={expDate}
+        expYear={expYear}
+        backNumber={cvc}
       />
       <Form
         username={username}

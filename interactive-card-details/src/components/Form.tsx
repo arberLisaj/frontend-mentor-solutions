@@ -49,8 +49,9 @@ const Form = ({
             <label className="exp" htmlFor="exp">
               Exp Date (MM / YY)
             </label>
-            <label>CVC</label>
+            <label htmlFor="cvcnumber">CVC</label>
             <input
+              id="cvcnumber"
               value={expDate}
               onChange={(e) => setExpDate(e.target.value)}
               type="number"
@@ -72,7 +73,7 @@ const Form = ({
           </div>
         </div>
       </div>
-      <button>Confirm</button>
+      <button>confirm</button>
     </section>
   );
 };
