@@ -13,7 +13,6 @@ body {
   display: grid;
   place-content: center;
   /* Chrome, Safari, Edge, Opera */
-  /* Firefox */
 }
 body input {
   outline: none;
@@ -22,9 +21,6 @@ body input::-webkit-outer-spin-button,
 body input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-body input[type=number] {
-  -moz-appearance: textfield;
 }
 
 main {
@@ -107,7 +103,7 @@ main section.main_content span {
     max-width: 100%;
     overflow: hidden;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
   }
   main header {
     width: 100%;
@@ -132,7 +128,7 @@ main section.main_content span {
     transform: translateX(-50%);
   }
   main section.main_content p {
-    font-size: 30px;
+    font-size: 23px;
   }
   main section.main_content p span {
     font-size: 30px;

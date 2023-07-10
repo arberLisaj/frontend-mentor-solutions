@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuToggleIcon from "../../images/icon-menu.svg";
 import ArrowDowm from "../../images/icon-arrow-down.svg";
 import ArrowUp from "../../images/icon-arrow-up.svg";
@@ -6,7 +6,6 @@ import TodoList from "../../images/icon-todo.svg";
 import Calendar from "../../images/icon-calendar.svg";
 import Reminder from "../../images/icon-reminders.svg";
 import Planning from "../../images/icon-planning.svg";
-// import GiandX from "../images/icon-close-menu.svg";
 
 interface Props {
   handleClick: () => void;
@@ -14,6 +13,23 @@ interface Props {
 const Navbar = ({ handleClick }: Props) => {
   const [activeFeatures, setActiveFeatures] = useState(false);
   const [activeCompany, setActiveCompany] = useState(false);
+
+  useEffect(() => {
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setActiveFeatures(false);
+        setActiveCompany(false);
+      }
+    };
+
+    // Attach the event listener
+    document.addEventListener("keydown", handleEscKey);
+
+    // Clean up the event listener
+    return () => {
+      document.removeEventListener("keydown", handleEscKey);
+    };
+  }, []);
   return (
     <nav>
       <div className="logo-and-ul">

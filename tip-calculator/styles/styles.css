@@ -13,11 +13,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
 body {
   background-color: hsl(185, 41%, 84%);
   padding-inline: 8px;

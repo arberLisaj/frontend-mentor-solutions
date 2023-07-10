@@ -235,7 +235,7 @@ section#link-container section#link form input {
   border-radius: 5px;
   width: 100%;
   height: 35px;
-  padding-inline: 5px;
+  padding-inline: 10px;
   border: none;
 }
 section#link-container section#link form input:focus {
@@ -243,7 +243,7 @@ section#link-container section#link form input:focus {
 }
 section#link-container .copy {
   display: flex;
-  padding: 10px 20px;
+  padding: 20px;
   background-color: white;
   border-radius: 10px;
   margin-top: 10px;
@@ -252,7 +252,7 @@ section#link-container .copy button {
   border: none;
   background-color: hsl(180, 66%, 49%);
   color: white;
-  padding: 5px 10px;
+  padding: 6px 15px;
   border-radius: 5px;
   cursor: pointer;
 }

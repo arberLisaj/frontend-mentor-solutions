@@ -12,28 +12,28 @@
     />
     <link
       rel="shortcut icon"
-      href="./assets/images/favicon-32x32.png"
+      href="./assets/images/favicon.svg"
       type="image/x-icon"
     />
     <script src="app.js" defer></script>
-    <title>Frontend Mentor | Age calculator app</title>
+    <title>Age calculator </title>
   </head>
   <body>
     <main class="calculator">
       <header>
         <section class="days">
-          <label data-label1>day</label>
-          <input type="number" data-days placeholder="DD" autofocus />
+          <label for="day" data-label1>day</label>
+          <input id="day" type="number" data-days placeholder="DD" autofocus />
           <p data-daysError>Must be a valid day</p>
         </section>
         <section class="months">
-          <label data-label2>month</label>
-          <input type="number" data-months placeholder="MM" />
+          <label for="month" data-label2>month</label>
+          <input id="month" type="number" data-months placeholder="MM" />
           <p data-monthsError>Must be a valid month</p>
         </section>
         <section class="years">
-          <label data-label3>year</label>
-          <input type="number" data-years placeholder="YYYY" />
+          <label for="year" data-label3>year</label>
+          <input id="year" type="number" data-years placeholder="YYYY" />
           <p data-yearsError>Must be in the past</p>
         </section>
       </header>

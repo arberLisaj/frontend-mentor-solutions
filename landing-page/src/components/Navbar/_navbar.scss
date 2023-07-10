@@ -14,6 +14,7 @@ nav {
 }
 .show {
   display: block;
+  z-index: 99999;
 }
 // mobile navigation
 @media (max-width: 640px) {

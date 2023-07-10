@@ -68,7 +68,7 @@ const LinkInput = () => {
       {copyLinkState && (
         <div className={hideCopyLink ? "hide copy" : "show copy"}>
           <input type="text" id="copy" value={displayURL} readOnly />
-          <button onClick={handleCopy}>{isCopied ? "Copied!" : "Copy"}</button>
+          <button onClick={handleCopy}>Copy</button>
         </div>
       )}
     </section>

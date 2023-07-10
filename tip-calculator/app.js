@@ -1,12 +1,12 @@
 const billInputEl = document.querySelector("[data-billInput]");
-const customTipEl = document.querySelector("[data-customtip]");
-const peopleNumberEl = document.querySelector("[data-peopleNumber]");
-const resetButtonEl = document.querySelector("[data-reset]");
+customTipEl = document.querySelector("[data-customtip]");
+peopleNumberEl = document.querySelector("[data-peopleNumber]");
+resetButtonEl = document.querySelector("[data-reset]");
 
-const displayTipAmount = document.querySelector("[data-tipAmount]");
-const displayTotalAmount = document.querySelector("[data-totalAmount]");
+displayTipAmount = document.querySelector("[data-tipAmount]");
+displayTotalAmount = document.querySelector("[data-totalAmount]");
 
-const radioButton = document.querySelectorAll('input[type="radio"]');
+radioButton = document.querySelectorAll('input[type="radio"]');
 // var peopleNumberEl = e.currentTarget.valueAsNumber;
 // adding the bill input  event listener
 billInputEl.addEventListener("input", () => {
@@ -59,7 +59,7 @@ peopleNumberEl.addEventListener("input", () => {
   );
 
   var tipAmount =
-    ((selectedPercentage / 100) * billInputValue) / peopleNumberValue;
+    ((selectedPercentage / 100) * billInputValue);
   var totalAmount = (tipAmount + billInputValue) / peopleNumberValue;
 
   if ((isNaN(tipAmount) && isNaN(totalAmount)) || peopleNumberEl <= 0) {

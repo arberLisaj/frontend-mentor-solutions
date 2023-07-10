@@ -28,6 +28,7 @@ nav ul {
 
 .show {
   display: block;
+  z-index: 99999;
 }
 
 @media (max-width: 640px) {
